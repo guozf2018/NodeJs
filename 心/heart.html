@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>心</title>
+    </head>
+    <body>
+        <canvas id="heart" width="300px" height="300px">心</canvas > 
+    </body>
+    <script type="text/javascript" src="heart.js"></script>
+    <script>
+        var c = document.getElementById("heart");
+        var ctx=c.getContext("2d");
+        //圆心
+        var x0 = c.width/2;//坐标X
+        var y0 = c.height/2;//坐标y
+        var r = c.width/5;//圆半径
+        getHeart(x0,y0,r);
+    </script>
+</html>
